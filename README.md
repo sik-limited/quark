@@ -1,83 +1,95 @@
-# Quark
+<h1 align="center">Quark</h1>
 
-[![skills.sh](https://skills.sh/b/sik-limited/quark)](https://skills.sh/sik-limited/quark)
+<p align="center">
+  <a href="https://skills.sh/sik-limited/quark"><img src="https://skills.sh/b/sik-limited/quark" alt="skills.sh"></a>
+</p>
 
-Open-source [Agent Skills](https://agentskills.io/) and `DESIGN.md` references for agentic design with Codex, Claude Code, and Cursor.
+<p align="center"><strong>English</strong> · <a href="README.ko.md">한국어</a> · <a href="README.ja.md">日本語</a> · <a href="README.zh-TW.md">繁體中文</a></p>
 
-**[Quark 웹사이트](https://design.sik.limited/)** · 컴포넌트와 디자인 토큰 미리보기
+<p align="center">Open-source <a href="https://agentskills.io/">Agent Skills</a> and <code>DESIGN.md</code> references for agentic design with Codex, Claude Code, and Cursor.</p>
+
+<p align="center"><a href="https://design.sik.limited/"><strong>Quark website</strong></a> · Preview UI components and design tokens</p>
 
 ```sh
 npx skills add sik-limited/quark
 ```
 
-## 스킬
+## Skills
 
-| 스킬 | 용도 |
+| Skill | What it does |
 | --- | --- |
-| [`quark-ui`](skills/quark-ui/SKILL.md) | Quark 컴포넌트와 디자인 토큰으로 UI 만들기 |
-| [`design-to-code`](skills/design-to-code/SKILL.md) | 이미지, Figma 프레임, 디자인 명세를 코드로 구현 |
-| [`design-check`](skills/design-check/SKILL.md) | 기존 UI를 점검하고 수정 우선순위 정리 |
-| [`q-clean`](skills/q-clean/SKILL.md) | 기존 UI를 컴포넌트로 정리하고 상태, 반응형, 접근성 문제 수정 |
-| [`component-api`](skills/component-api/SKILL.md) | 공용 컴포넌트의 이름, 상태, 속성, 합성 방식과 프레임워크 간 동작 설계 |
-| [`design-tokens`](skills/design-tokens/SKILL.md) | 색상, 간격, 반경, 그림자, 모션과 테마의 토큰 체계 설계 |
-| [`animate`](skills/animate/SKILL.md) | 전환, 스프링, 제스처와 모션 감소 대응을 포함한 UI 모션 구현 |
-| [`interface-polish`](skills/interface-polish/SKILL.md) | 모서리 반경, 광학 정렬, 테두리, 아이콘 등 UI 디테일 점검 |
-| [`typography`](skills/typography/SKILL.md) | 글자 크기, 행간, 줄바꿈, 숫자와 글꼴 로딩 점검 |
-| [`layout`](skills/layout/SKILL.md) | 그룹, 정렬, 간격, 반응형 레이아웃과 RTL 점검 |
-| [`accessibility`](skills/accessibility/SKILL.md) | WCAG 2.2 AA를 기준으로 시맨틱, 포커스, 키보드와 터치 조작 점검 |
-| [`interface-copy`](skills/interface-copy/SKILL.md) | 버튼, 레이블, 오류, 빈 상태와 확인 대화상자의 문구 작성 |
-| [`stress-test`](skills/stress-test/SKILL.md) | 긴 텍스트, 빈 데이터, 좁은 화면과 오류 상태에서 UI가 깨지는 지점 확인 |
-| [`interface-review`](skills/interface-review/SKILL.md) | 변경 사항을 검토하고 영향도에 따라 개선점을 정리 |
+| [`quark-ui`](skills/quark-ui/SKILL.md) | Build interfaces with Quark components and design tokens |
+| [`design-to-code`](skills/design-to-code/SKILL.md) | Turn screenshots, Figma frames, and design specs into code |
+| [`design-check`](skills/design-check/SKILL.md) | Review an existing interface and prioritize fixes |
+| [`q-clean`](skills/q-clean/SKILL.md) | Refactor UI into components and fix state, motion, responsive layout, and accessibility issues |
+| [`component-api`](skills/component-api/SKILL.md) | Design reusable component APIs, including props, states, and composition across frameworks |
+| [`design-tokens`](skills/design-tokens/SKILL.md) | Define tokens for color, spacing, radius, shadows, motion, and themes |
+| [`animate`](skills/animate/SKILL.md) | Build UI transitions, springs, and gestures with support for reduced motion |
+| [`interface-polish`](skills/interface-polish/SKILL.md) | Refine corner radii, optical alignment, borders, and icons |
+| [`typography`](skills/typography/SKILL.md) | Set type scales, line heights, wrapping, numerals, and font loading |
+| [`layout`](skills/layout/SKILL.md) | Review grouping, alignment, spacing, responsive layouts, and right-to-left text |
+| [`accessibility`](skills/accessibility/SKILL.md) | Check semantics, focus, keyboard controls, and touch targets against WCAG 2.2 AA |
+| [`interface-copy`](skills/interface-copy/SKILL.md) | Write labels, errors, empty states, and confirmation prompts |
+| [`stress-test`](skills/stress-test/SKILL.md) | Find where UI breaks with long text, empty data, narrow screens, and errors |
+| [`interface-review`](skills/interface-review/SKILL.md) | Review a change and organize findings by impact |
 
-## 설치
+## Install
 
-### Codex, Claude Code, Cursor
+With Node.js and npm installed, run the command for your agent from the project directory. The command at the top lets you choose both the skills and the agent. [Skills CLI documentation](https://www.skills.sh/docs/cli)
 
-Node.js와 npm을 설치한 뒤 스킬을 사용할 프로젝트 폴더에서 명령을 실행하세요. 상단 명령으로 설치할 스킬과 에이전트를 선택할 수 있습니다. 에이전트를 지정하려면 `--agent codex`, `--agent claude-code` 또는 `--agent cursor`를 붙이세요. [Skills CLI 문서](https://www.skills.sh/docs/cli)
+### Codex
 
 ```sh
-# Quark UI만 Codex에 설치
-npx skills add sik-limited/quark --skill quark-ui --agent codex
-
-# 전체 스킬을 Claude Code에 설치
-npx skills add sik-limited/quark --skill '*' --agent claude-code
+npx skills add sik-limited/quark --agent codex
 ```
 
-여러 프로젝트에서 사용하려면 `--global`을 붙이세요. `q-clean`과 `design-check`는 여러 Quark 스킬을 함께 읽으므로 전체 설치를 권장합니다.
+### Claude Code
 
-### Quark 웹사이트에서 가져오기
+```sh
+npx skills add sik-limited/quark --agent claude-code
+```
 
-[Quark UI 웹 페이지](https://design.sik.limited/ko/skills/quark-ui/)에서 `SKILL.md`를 내려받을 수 있습니다. Skills CLI에 파일 URL을 전달해 설치할 수도 있습니다.
+### Cursor
+
+```sh
+npx skills add sik-limited/quark --agent cursor
+```
+
+Add `--skill quark-ui` to install just that skill, `--skill '*'` to install the full collection, or `--global` to use the skills across projects. Install the full collection when using `q-clean` or `design-check`, since they draw on other Quark skills.
+
+### Install from the Quark website
+
+Download `SKILL.md` from the [Quark UI skill page](https://design.sik.limited/en/skills/quark-ui/), or pass the file URL directly to the Skills CLI.
 
 ```sh
 npx skills add https://design.sik.limited/skills/quark-ui/SKILL.md
 ```
 
-수동으로 설치하려면 `skills/`에서 원하는 스킬 폴더를 에이전트의 스킬 디렉터리에 복사하세요. Claude 웹에서는 해당 폴더를 ZIP으로 압축해 업로드할 수 있습니다. ChatGPT 웹에서는 워크스페이스에서 스킬 업로드를 지원할 때 가져올 수 있습니다. [Claude 도움말](https://support.claude.com/en/articles/12512180-use-skills-in-claude) · [ChatGPT 도움말](https://help.openai.com/en/articles/20001066-skills-in-chatgpt)
+To install manually, copy the skill folder from `skills/` into your agent's skills directory. In Claude on the web, zip the skill folder and upload it. In ChatGPT on the web, you can upload a skill if your workspace supports it. [Claude help](https://support.claude.com/en/articles/12512180-use-skills-in-claude) · [ChatGPT help](https://help.openai.com/en/articles/20001066-skills-in-chatgpt)
 
-## 첫 사용
+## Try a skill
 
-스킬을 설치한 에이전트에서 점검할 화면을 지정하고 다음과 같이 요청하세요.
+In your agent, point to the screen you want to review and try this prompt.
 
 ```text
-design-check로 이 설정 화면의 모바일 레이아웃, 키보드 포커스, 오류 상태를 점검해 줘. 발견한 문제와 수정 우선순위를 알려줘.
+Use design-check to review this settings screen for mobile layout, keyboard focus, and error states. List the issues you find and prioritize the fixes.
 ```
 
 ## DESIGN.md
 
-참고할 문서를 골라 프로젝트 루트에 `DESIGN.md`로 저장하고 에이전트에게 UI 작업 전에 읽도록 요청하세요. Quark가 공개 디자인 시스템과 제품 화면을 바탕으로 정리한 독립 참고 자료입니다.
+Choose a reference, save it as `DESIGN.md` at the root of your project, and ask your agent to read it before making UI changes. Quark compiled these independent references from public design systems and product screens.
 
-| 레퍼런스 | 참고할 요소 | 링크 |
+| Reference | What to look for | Links |
 | --- | --- | --- |
-| Claude | 따뜻한 색상, 코럴 버튼, 에디토리얼 타이포그래피 | [문서](designs/claude/DESIGN.md) · [미리보기](https://design.sik.limited/ko/themes/claude/) |
-| KRDS | 공공 서비스 UI, 접근성, 폼과 내비게이션 | [문서](designs/krds/DESIGN.md) · [미리보기](https://design.sik.limited/ko/themes/krds/) |
-| Pinterest | 이미지 중심 탐색, 메이슨리 그리드, 필터 | [문서](designs/pinterest/DESIGN.md) · [미리보기](https://design.sik.limited/ko/themes/pinterest/) |
-| RIDI | 콘텐츠 탐색, 책 표지 카드, 순위 목록 | [문서](designs/ridi/DESIGN.md) · [미리보기](https://design.sik.limited/ko/themes/ridi/) |
-| SEED (당근) | 시맨틱 색상, 그리드, 한국어 UX 라이팅 | [문서](designs/seed/DESIGN.md) · [미리보기](https://design.sik.limited/ko/themes/seed/) |
-| Toss | 금융 UI, 모바일 터치 컨트롤, 버튼과 입력 상태 | [문서](designs/toss/DESIGN.md) · [미리보기](https://design.sik.limited/ko/themes/toss/) |
-| Wanted (Montage) | 반응형 그리드, 타이포그래피, 범용 컴포넌트 상태 | [문서](designs/wanted/DESIGN.md) · [미리보기](https://design.sik.limited/ko/themes/wanted/) |
-| xAI | 다크 UI, 흰색 버튼, 얇은 테두리와 평면 패널 | [문서](designs/xai/DESIGN.md) · [미리보기](https://design.sik.limited/ko/themes/xai/) |
+| Claude | Warm colors, coral buttons, and editorial typography | [Document](designs/claude/DESIGN.md) · [Preview](https://design.sik.limited/en/themes/claude/) |
+| KRDS | Public service interfaces, accessibility, forms, and navigation | [Document](designs/krds/DESIGN.md) · [Preview](https://design.sik.limited/en/themes/krds/) |
+| Pinterest | Image-led discovery, masonry grids, and filters | [Document](designs/pinterest/DESIGN.md) · [Preview](https://design.sik.limited/en/themes/pinterest/) |
+| RIDI | Content browsing, book cover cards, and ranked lists | [Document](designs/ridi/DESIGN.md) · [Preview](https://design.sik.limited/en/themes/ridi/) |
+| SEED | Semantic colors, grids, and Korean UX writing | [Document](designs/seed/DESIGN.md) · [Preview](https://design.sik.limited/en/themes/seed/) |
+| Toss | Finance UI, mobile touch controls, and button and input states | [Document](designs/toss/DESIGN.md) · [Preview](https://design.sik.limited/en/themes/toss/) |
+| Wanted (Montage) | Responsive grids, typography, and shared component states | [Document](designs/wanted/DESIGN.md) · [Preview](https://design.sik.limited/en/themes/wanted/) |
+| xAI | Dark UI, white buttons, thin borders, and flat panels | [Document](designs/xai/DESIGN.md) · [Preview](https://design.sik.limited/en/themes/xai/) |
 
-## 라이선스
+## License
 
-Quark가 작성한 스킬과 디자인 참고 문서는 [MIT](LICENSE)로 공개합니다. 문서에서 언급한 브랜드명, 상표, 글꼴 및 외부 자료의 권리는 각 권리자에게 있습니다.
+Quark's original skills and design references are released under the [MIT License](LICENSE). Brand names, trademarks, fonts, and third-party materials belong to their respective owners.
