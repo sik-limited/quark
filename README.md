@@ -1,6 +1,8 @@
 # Quark
 
-AI 코딩 에이전트로 웹 UI를 설계하고 구현하고 점검할 때 쓰는 [Agent Skills](https://agentskills.io/)와 `DESIGN.md`를 모았습니다. 컴포넌트와 디자인 토큰은 [Quark 웹사이트](https://design.sik.limited/ko/)에서 미리 볼 수 있습니다.
+**[Quark 웹사이트](https://design.sik.limited/)** · 컴포넌트와 디자인 토큰 미리보기
+
+AI 코딩 에이전트로 웹 UI를 설계하고 구현하고 점검할 때 쓰는 [Agent Skills](https://agentskills.io/)와 `DESIGN.md`를 모았습니다.
 
 ## 스킬
 
