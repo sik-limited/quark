@@ -3,7 +3,7 @@
 <h1 align="center">Quark</h1>
 
 <p align="center">
-  <a href="https://skills.sh/sik-limited/quark"><img src="https://skills.sh/b/sik-limited/quark" alt="skills.sh"></a>
+  <a href="https://skills.sh/sik-limited/quark"><img src="assets/skills-sh-badge.svg" width="136" height="20" alt="skills.sh"></a>
 </p>
 
 <p align="center"><a href="README.md">English</a> · <strong>한국어</strong> · <a href="README.ja.md">日本語</a> · <a href="README.zh-TW.md">繁體中文</a></p>
