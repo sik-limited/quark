@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+  <style>
+    @media (prefers-color-scheme: dark) { path { stroke: #fff; } }
+  </style>
+  <path d="M60 64L43 36 M60 64L64 45 M60 64L82 40 M60 64L87 70 M60 64L72 84 M60 64L35 83 M60 64L40 56" transform="translate(-25 -24)" fill="none" stroke="#000" stroke-width="8" stroke-linecap="butt" stroke-linejoin="miter"/>
+</svg>

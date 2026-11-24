@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/quark-symbol.svg" width="72" height="72" alt=""></p>
+
 <h1 align="center">Quark</h1>
 
 <p align="center">
